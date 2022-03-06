@@ -4,9 +4,7 @@ import pandas as pd
 import plotly.express as px
 from dash import html, Dash, dash_table, dcc, Output, Input
 
-app = Dash(
-    __name__, external_stylesheets=["app.css"]
-)
+app = Dash(__name__, external_stylesheets=["app.css"])
 
 all_data_types = ['futures', 'options']
 colors = {"background": "#011833", "text": "#7FDBFF"}
